@@ -1,4 +1,4 @@
-# Hand-Tracking-Machine-Hand
+# Hand-Tracking-Arduino-Hand
 這個專案使用 MediaPipe 進行手部追蹤，根據手勢控制 Arduino 上的伺服馬達。程式透過攝影機檢測手部姿勢，將手勢轉換為 6 位二進位編號（5 根手指 + 指間開闔），並透過序列埠傳送給 Arduino 驅動機械手。
 # 功能介紹
 - **手部追蹤**：使用 MediaPipe 檢測手部關鍵點，計算手指關節角度。
