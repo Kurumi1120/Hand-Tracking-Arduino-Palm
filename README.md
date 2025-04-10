@@ -6,4 +6,8 @@
 3. 通訊與傳輸：透過pySerial，使Python與Arduino進行通訊之部分。
 4. 手掌馬達控制：用於控制手掌的.ino程式碼，處理接收到的手勢資訊並執行。
 # 使用函式庫
-1.
+使用 pip 進行安裝。
+1. mediapipe
+2. opencv-python
+3. numpy
+4. pyserial
