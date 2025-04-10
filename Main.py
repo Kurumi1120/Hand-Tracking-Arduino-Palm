@@ -75,15 +75,12 @@ def draw_finger_angles(image, results, joint_list):
                 2,
                 cv2.LINE_AA,
             )
-
-            # Process each joint and update the hand gesture
+            
             process_all_joints(joint, angle)
 
         # 將當前的手勢轉換為元組，然後查找對應的編號
         gesture_tuple = tuple(hand_gesture)
         gesture_number = gesture_dict.get(gesture_tuple, -1)
-
-        # Display the current hand gesture array and its number on the image
         gesture_text = f"Gesture: {hand_gesture} | Number: {gesture_number}"
         cv2.putText(
             image,
@@ -203,10 +200,10 @@ with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5) a
                         cv2.LINE_AA,
                     )
 
-                # 顯示6、9、10號座標的角度並更新狀態
+                # 顯示角度並更新狀態
                 draw_finger_angle_6_9_10(image, hand)
 
-            # 使用 draw_finger_angles 函數來偵測手勢
+            # 偵測手勢
             image = draw_finger_angles(image, results, joint_list)
 
         cv2.imshow("Hand Tracking", image)
