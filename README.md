@@ -18,3 +18,6 @@
 - **opencv-python**
 - **numpy**
 - **pyserial**
+# 硬體需求
+- **Python 3.7+**
+- **Arduino IDE**
